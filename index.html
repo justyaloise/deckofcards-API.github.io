@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deck of Cards</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: #eba0ad;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h2 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    header small {
+      display: block;
+      margin-top: 5px;
+      opacity: 0.8;
+    }
+
+    main {
+      flex: 1;
+      margin: 40px 20px;
+      text-align: center;
+    }
+
+    .cards-container {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      width: 220px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+      text-align: center;
+      border-top: 4px solid #d96da3;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .card i {
+      font-size: 1.8rem;
+      display: block;
+      margin-bottom: 8px;
+      color: #ff69b4;
+    }
+
+    footer {
+      background-color: #f1f1f1;
+      color: #333;
+      padding: 15px 0;
+      text-align: center;
+      font-weight: normal;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h2><i class="bi bi-suit-heart-fill"></i> Deck of Cards</h2>
+  </header>
+
+  <main>
+    <h1>Welcome!</h1>
+    <p>Explore and search playing cards.</p>
+
+    <div class="cards-container">
+      <a href="list.html">
+        <div class="card">
+          <i class="bi bi-grid-3x3-gap-fill"></i>
+          <h3>View Card List</h3>
+          <p>Browse all cards with images loaded from the API.</p>
+        </div>
+      </a>
+
+      <a href="search.html">
+        <div class="card">
+          <i class="bi bi-search"></i>
+          <h3>Search Cards</h3>
+          <p>Search cards by value or suit instantly.</p>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    Deck of Cards - Rhianne Gabriel
+  </footer>
+
+</body>
+</html>
+
